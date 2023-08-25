@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+html { 
+  background: url("image3.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body{
+	font-family: 'Ubuntu', sans-serif;
+	outline: none;
+	width: 100%;
+	background-image: url(image3.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 100vh;
+}
+.navbar-inverse{
+	background-color: #2a84eb ;
+	border-color: transparent;
+}
+
+.navbar-inverse .navbar-brand{
+	color: #fff;
+	font-size: 30px;
+	margin-right: 40px;
+}
+
+#myNavbar .navbar-nav li a{
+	color: #fff;
+	font-size: 11px;
+	}
+#myNavbar #course{
+	transition: all 0.3s ease-in-out;
+}
+#myNavbar #course:hover{
+	background-color:#0751a6; 
+
+}	
+.dropdown-menu{
+  display: none;
+  position: absolute;
+  background-color: #f0f0f0;
+  box-shadow: 2px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+#sub-dropdown-menu{
+display: none;
+  position: absolute;
+  background-color: #f0f0f0;
+  margin-left: 176px;
+  margin-top: -26px;
+
+}
+
+#sub-dropdown-menu a , .dropdown-menu a {
+	color: #000 !important;
+		font-size: 16px !important;
+}
+
+.dropdown:hover .dropdown-menu {display: block;transition: all 0.5s ease-in-out;}
+
+.dropdown .dropdown-menu a:hover{background-color: #c9c7c7;}
+
+
+#sub-dropdown:hover #sub-dropdown-menu {display: block;}
+
+.goal{	
+	margin: 35px;
+	height: 350px;
+	object-fit: contain;
+	border-radius: 10px;
+}
+
+.header_wrapper{
+	display: flex;
+}
+
+.blue-rectangle {
+background-color: rgba(3,78,136,0.7);
+padding: 2% 2% 2% 2%;
+margin-bottom: 20px;
+}
+
+.blue-rectangle p{
+	color:white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size:24px;
+	font-weight: 500;
+
+}
+
+
+h1{
+	color: black;
+	font-size: 40px;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.footer .footer-bottom {
+	background: #2a84eb;
+	color: #fff;
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	padding-top: 20px;
+}
+a.yt{
+	color:  #F32218;
+}
+
+a.notes{
+	font-size:15pt;
+	font-family: 'Ubuntu', sans-serif;}
+p.notes{
+	font-size:15pt;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+h3
+{
+	font-size:20pt;
+	color: black;
+	font-family: 'Ubuntu', sans-serif;
+}
+a.banner
+{
+	color: grey;
+}
+
+marquee{
+	 background-color: #1FDDF0;
+	 color: black;
+	 font-family: 'Ubuntu', sans-serif;
+	 font-size: 21px;
+	 
+}
+.scroll-left {
+ height: 100px;	
+ overflow: hidden;
+ position: relative;
+}
+.scroll-left p {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);	
+ transform:translateX(100%);
+ /* Apply animation to this element */	
+ -moz-animation: scroll-left 10s linear infinite;
+ -webkit-animation: scroll-left 10s linear infinite;
+ animation: scroll-left 10s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-left {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes scroll-left {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes scroll-left {
+ 0%   { 
+ -moz-transform: translateX(100%); /* Browser bug fix */
+ -webkit-transform: translateX(100%); /* Browser bug fix */
+ transform: translateX(100%); 		
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Browser bug fix */
+ -webkit-transform: translateX(-100%); /* Browser bug fix */
+ transform: translateX(-100%); 
+ }
+}
+@media only screen and (max-width: 760px) {
+	.goal{	
+		margin: 20px;
+		height: 250px;
+		object-fit: contain;
+		border-radius: 10px;
+	}
+}
+
+img.logos{
+	float: right;
+	width: 100px;
+	margin: 20px;
+
+}
+
+#logo{
+	height: 50px;
+	object-fit: contain;
+	background-color: #0751a6;
+	margin-top: -15px;
+}
